@@ -1,0 +1,1115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-12-14 Mon 17:15 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Grade Claim 3</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="Logan Hunt" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: auto;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+// @license magnet:?xt=urn:btih:e95b018ef3580986a04669f1b5879592219e2a7a&dn=public-domain.txt Public Domain
+<!--/*--><![CDATA[/*><!--*/
+     function CodeHighlightOn(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.add("code-highlighted");
+         target.classList.add("code-highlighted");
+       }
+     }
+     function CodeHighlightOff(elem, id)
+     {
+       var target = document.getElementById(id);
+       if(null != target) {
+         elem.classList.remove("code-highlighted");
+         target.classList.remove("code-highlighted");
+       }
+     }
+    /*]]>*///-->
+// @license-end
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Grade Claim 3</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orga7600a1">1. So what is this grade claim?</a>
+<ul>
+<li><a href="#orgfd8c324">1.1. The Grade</a></li>
+<li><a href="#org550a1d6">1.2. The Form</a></li>
+<li><a href="#org40e1965">1.3. A little more about PyGame&#x2026;</a></li>
+</ul>
+</li>
+<li><a href="#orge4a2409">2. How do I explore the WOK?</a>
+<ul>
+<li><a href="#orgc3b16eb">2.1. The Repo</a></li>
+<li><a href="#org5c77c4c">2.2. Running</a></li>
+<li><a href="#orgaede4b6">2.3. Structure of my WOK Visualizer</a></li>
+<li><a href="#org4381f89">2.4. File structure for graphs</a></li>
+</ul>
+</li>
+<li><a href="#org3f7ede0">3. What paths can you provide for the Grade?</a>
+<ul>
+<li><a href="#org97969b7">3.1. The Ultimatum Grade Path</a></li>
+<li><a href="#orgeb582b4">3.2. Another Path</a></li>
+<li><a href="#orgea76971">3.3. Yet Another Path</a></li>
+<li><a href="#org82bfacd">3.4. Another Path Yet Again</a></li>
+</ul>
+</li>
+<li><a href="#org26da15b">4. High Particpation</a>
+<ul>
+<li><a href="#orgadca396">4.1. An Overview of Kritik</a>
+<ul>
+<li><a href="#org78905e9">4.1.1. Completion of each discussion</a></li>
+<li><a href="#org7398219">4.1.2. Completion of each activity</a></li>
+</ul>
+</li>
+<li><a href="#orgefb3c17">4.2. An Overview of CDL</a>
+<ul>
+<li><a href="#org078750a">4.2.1. Week 12 CDL</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org3616f2a">5. High Problem-Solving</a>
+<ul>
+<li><a href="#orga0710a0">5.1. Every Exercise Complete</a>
+<ul>
+<li><a href="#org7f5c3e8">5.1.1. Chapter 9 Notebook</a></li>
+<li><a href="#org12d8408">5.1.2. Chapter 8 Notebook</a></li>
+<li><a href="#orgda2ddc5">5.1.3. Chapter 7 Notebook</a></li>
+</ul>
+</li>
+<li><a href="#org751da41">5.2. Going above and beyond</a>
+<ul>
+<li><a href="#orgb090d2d">5.2.1. Chapter 7</a></li>
+<li><a href="#orgce10420">5.2.2. Chapter 8</a></li>
+<li><a href="#orgd061266">5.2.3. Chapter 9</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga7600a1" class="outline-2">
+<h2 id="orga7600a1"><span class="section-number-2">1</span> So what is this grade claim?</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-orgfd8c324" class="outline-3">
+<h3 id="orgfd8c324"><span class="section-number-3">1.1</span> The Grade</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Similar to my other claims, I will claim an A.
+</p>
+</div>
+</div>
+<div id="outline-container-org550a1d6" class="outline-3">
+<h3 id="org550a1d6"><span class="section-number-3">1.2</span> The Form</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+The form of this grade claim has two sections: an org-mode source as well as
+a visualization tool/builder for my WOK that I have built from the ground up with
+Python and PyGame (a simple library for graphics).
+</p>
+
+<p>
+Of course I will also provide some evidence to my &ldquo;High Particpation&rdquo;, &ldquo;High
+Problem Solving&rdquo; aspect of my Grade Claim.
+</p>
+</div>
+</div>
+<div id="outline-container-org40e1965" class="outline-3">
+<h3 id="org40e1965"><span class="section-number-3">1.3</span> A little more about PyGame&#x2026;</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+It is necessary to install PyGame to continue with the Grade Claim.
+</p>
+
+<p>
+This can be done simply with &rsquo;pip install pygame&rsquo;
+</p>
+
+<div class="org-src-container">
+<pre class="src src-bash">pip install pygame
+</pre>
+</div>
+
+<p>
+Below is some sample code using PyGame to spawn a simple black window
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #e68183;">import</span> pygame
+pygame.init()
+
+<span style="color: #87c095; font-style: italic;">clock</span> = pygame.time.Clock()
+<span style="color: #87c095; font-style: italic;">screen</span> = pygame.display.set_mode((<span style="color: #d3a0bc; font-weight: bold;">800</span>, <span style="color: #d3a0bc; font-weight: bold;">600</span>))
+
+<span style="color: #87c095; font-style: italic;">running</span> = <span style="color: #d3a0bc;">True</span>
+<span style="color: #e68183;">while</span> (running):
+    <span style="color: #e68183;">for</span> event <span style="color: #e68183;">in</span> pygame.event.get():
+        <span style="color: #e68183;">if</span> event.<span style="color: #e39b7b;">type</span> == pygame.QUIT:
+            <span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">If the user closed the window</span>
+            <span style="color: #87c095; font-style: italic;">running</span> = <span style="color: #d3a0bc;">False</span>
+    screen.fill((<span style="color: #d3a0bc; font-weight: bold;">255</span>,<span style="color: #d3a0bc; font-weight: bold;">255</span>,<span style="color: #d3a0bc; font-weight: bold;">255</span>)) <span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">Fill the screen with black</span>
+    clock.tick(<span style="color: #d3a0bc; font-weight: bold;">60</span>) <span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">60 FPS</span>
+
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orge4a2409" class="outline-2">
+<h2 id="orge4a2409"><span class="section-number-2">2</span> How do I explore the WOK?</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgc3b16eb" class="outline-3">
+<h3 id="orgc3b16eb"><span class="section-number-3">2.1</span> The Repo</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+If git is installed on your system, simply
+&rsquo;git clone <a href="https://github.com/Simponic/graph-explorer.git">https://github.com/Simponic/graph-explorer.git</a>&rsquo;
+Then change directory to &rsquo;src&rsquo; and run &rsquo;python3 main.py&rsquo; to view my WOK
+</p>
+</div>
+</div>
+<div id="outline-container-org5c77c4c" class="outline-3">
+<h3 id="org5c77c4c"><span class="section-number-3">2.2</span> Running</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+For a tutorial/overview/walkthrough of the software, either read the README.md
+file in the repository, or watch the video I made explaining it:
+<a href="https://www.youtube.com/watch?v=nIgWwrd05ts">https://www.youtube.com/watch?v=nIgWwrd05ts</a>
+</p>
+
+<p>
+Want a random graph? Try using the randomLinks() and randomNodes() methods on an
+instance of a Graph!
+</p>
+</div>
+</div>
+<div id="outline-container-orgaede4b6" class="outline-3">
+<h3 id="orgaede4b6"><span class="section-number-3">2.3</span> Structure of my WOK Visualizer</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+Of course, I have to go into a little detail about my WOK software and its
+semantics.
+</p>
+
+<p>
+The overall structure is quite simple. I have two Classes I created: a Node,
+which is the functional unit of Graph, and a Graph class which contains all of
+the methods for displaying and updating Nodes with relation to the whole graph.
+</p>
+
+<p>
+For example, the function that draws the links between selected nodes is in the
+Graph class.
+</p>
+</div>
+</div>
+<div id="outline-container-org4381f89" class="outline-3">
+<h3 id="org4381f89"><span class="section-number-3">2.4</span> File structure for graphs</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+When the program is initalized it can read input from a file. The format of this
+file is just a modified adjacency list:
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Source<sub>Node</sub></th>
+<th scope="col" class="org-left">Destination<sub>Node</sub></th>
+<th scope="col" class="org-right">Weight</th>
+<th scope="col" class="org-left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">log(n)</td>
+<td class="org-left">Function</td>
+<td class="org-right">1.0</td>
+<td class="org-left">Is a</td>
+</tr>
+
+<tr>
+<td class="org-left">Adjacency<sub>Matrix</sub></td>
+<td class="org-left">Matrix</td>
+<td class="org-right">1.0</td>
+<td class="org-left">Is a</td>
+</tr>
+
+<tr>
+<td class="org-left">Adjacency<sub>Matrix</sub></td>
+<td class="org-left">Graph</td>
+<td class="org-right">1.0</td>
+<td class="org-left">Represents a</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Where each section is seperated by spaces. My finalGraph.txt provided in the
+repo is a good example of a full WOK represented with this convention.
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org3f7ede0" class="outline-2">
+<h2 id="org3f7ede0"><span class="section-number-2">3</span> What paths can you provide for the Grade?</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org97969b7" class="outline-3">
+<h3 id="org97969b7"><span class="section-number-3">3.1</span> The Ultimatum Grade Path</h3>
+<div class="outline-text-3" id="text-3-1">
+
+<div id="org1dfa359" class="figure">
+<p><img src="imgs/path.png" alt="path.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgeb582b4" class="outline-3">
+<h3 id="orgeb582b4"><span class="section-number-3">3.2</span> Another Path</h3>
+<div class="outline-text-3" id="text-3-2">
+
+<div id="org87fcae8" class="figure">
+<p><img src="imgs/path1.png" alt="path1.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-orgea76971" class="outline-3">
+<h3 id="orgea76971"><span class="section-number-3">3.3</span> Yet Another Path</h3>
+<div class="outline-text-3" id="text-3-3">
+
+<div id="org3834ba4" class="figure">
+<p><img src="imgs/path2.png" alt="path2.png" />
+</p>
+</div>
+</div>
+</div>
+<div id="outline-container-org82bfacd" class="outline-3">
+<h3 id="org82bfacd"><span class="section-number-3">3.4</span> Another Path Yet Again</h3>
+<div class="outline-text-3" id="text-3-4">
+
+<div id="orge1e8ba4" class="figure">
+<p><img src="imgs/path3.png" alt="path3.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-org26da15b" class="outline-2">
+<h2 id="org26da15b"><span class="section-number-2">4</span> High Particpation</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgadca396" class="outline-3">
+<h3 id="orgadca396"><span class="section-number-3">4.1</span> An Overview of Kritik</h3>
+<div class="outline-text-3" id="text-4-1">
+</div>
+<div id="outline-container-org78905e9" class="outline-4">
+<h4 id="org78905e9"><span class="section-number-4">4.1.1</span> Completion of each discussion</h4>
+<div class="outline-text-4" id="text-4-1-1">
+<p>
+I have engaged fully in each discussion on Kritik, with much proof. I will
+not include it as the only way to do so would to be to take a screenshot
+of every response!
+Instead I have just included proof from the Final Discussion.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org1e2376e"></a>Above and beyond for the Final Discussion<br />
+<div class="outline-text-5" id="text-4-1-1-1">
+<p>
+For the Final Discussion, I chose to submit comments to several more
+other posts than I usually do. This was in addition to my well-praised
+post on the board.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="org8db197f"></a>A comment from Caden Franc<br />
+<div class="outline-text-6" id="text-4-1-1-1-1">
+
+<div id="orgb993f9f" class="figure">
+<p><img src="imgs/comment.png" alt="comment.png" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="org8195edf"></a>A comment from Audrey Moncada<br />
+<div class="outline-text-6" id="text-4-1-1-1-2">
+
+<div id="org56c91b3" class="figure">
+<p><img src="imgs/comment1.png" alt="comment1.png" />
+</p>
+</div>
+</div>
+</li>
+<li><a id="orgea87fc7"></a>A comment from Hunter Livesay regarding my grade for Final Discussion<br />
+<div class="outline-text-6" id="text-4-1-1-1-3">
+
+<div id="org2daf5ae" class="figure">
+<p><img src="imgs/comment2.png" alt="comment2.png" />
+</p>
+</div>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+<div id="outline-container-org7398219" class="outline-4">
+<h4 id="org7398219"><span class="section-number-4">4.1.2</span> Completion of each activity</h4>
+<div class="outline-text-4" id="text-4-1-2">
+<p>
+Low: Mean of 82% from all peer evaluators
+</p>
+
+<p>
+High: Mean of 100% from all peer evaluators
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #e68183;">import</span> matplotlib.pyplot <span style="color: #e68183;">as</span> plt
+plt.style.use(<span style="color: #87af87;">'ggplot'</span>)
+
+<span style="color: #87c095; font-style: italic;">x</span> = <span style="color: #e39b7b;">list</span>(<span style="color: #e39b7b;">map</span>(<span style="color: #e68183;">lambda</span> x: <span style="color: #87af87;">'Activity '</span> + <span style="color: #e39b7b;">str</span>(x), <span style="color: #e39b7b;">range</span>(<span style="color: #d3a0bc; font-weight: bold;">1</span>, <span style="color: #d3a0bc; font-weight: bold;">8</span>)))
+<span style="color: #87c095; font-style: italic;">scores</span> = [<span style="color: #d3a0bc; font-weight: bold;">92</span>, <span style="color: #d3a0bc; font-weight: bold;">82</span>, <span style="color: #d3a0bc; font-weight: bold;">100</span>, <span style="color: #d3a0bc; font-weight: bold;">100</span>, <span style="color: #d3a0bc; font-weight: bold;">97</span>, <span style="color: #d3a0bc; font-weight: bold;">85</span>, <span style="color: #d3a0bc; font-weight: bold;">94</span>]
+
+<span style="color: #87c095; font-style: italic;">x_pos</span> = [i <span style="color: #e68183;">for</span> i, _ <span style="color: #e68183;">in</span> <span style="color: #e39b7b;">enumerate</span>(x)]
+
+plt.bar(x_pos, scores, color=<span style="color: #87af87;">'green'</span>)
+plt.xlabel(<span style="color: #87af87;">"Activity"</span>)
+plt.ylabel(<span style="color: #87af87;">"Average Evaluator Score"</span>)
+plt.title(<span style="color: #87af87;">"Kritik Scores"</span>)
+
+plt.xticks(x_pos, x)
+
+plt.savefig(<span style="color: #87af87;">"./imgs/graph.png"</span>)
+<span style="color: #e68183;">print</span>(<span style="color: #87af87;">"saved to ./imgs/graph.png"</span>)
+</pre>
+</div>
+</div>
+
+<ol class="org-ol">
+<li><a id="org4cb4811"></a>The Results<br />
+<div class="outline-text-5" id="text-4-1-2-1">
+
+<div id="org0ae011b" class="figure">
+<p><img src="imgs/graph.png" alt="graph.png" />
+</p>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgefb3c17" class="outline-3">
+<h3 id="orgefb3c17"><span class="section-number-3">4.2</span> An Overview of CDL</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Regarding the Class-Directed Learning, in most groups I find myself
+being the leader to describe the process to solve the problems.
+</p>
+
+<p>
+To demonstrate this, I cherry-picked my submission to Week 12.
+</p>
+</div>
+<div id="outline-container-org078750a" class="outline-4">
+<h4 id="org078750a"><span class="section-number-4">4.2.1</span> Week 12 CDL</h4>
+<div class="outline-text-4" id="text-4-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org2bbbda5"></a>The Code Submitted for Task 3<br />
+<div class="outline-text-5" id="text-4-2-1-1">
+<p>
+For Task 3 I modified the &ldquo;find shortest path&rdquo; function to respect length
+limits a little better. I did not fix it all the way, and if the length
+limit is shorter than the shortest path, the code continues to hang.
+</p>
+
+<p>
+For use in org-mode, change the values in the rewritten input() function.
+Otherwise, you can remove the input() function
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #e68183;">from</span> collections <span style="color: #e68183;">import</span> defaultdict
+
+<span style="color: #e68183;">def</span> <span style="color: #87c095;">input</span>(x):
+    <span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">Input re-written for use in org-mode</span>
+    <span style="color: #e68183;">if</span> (x == <span style="color: #87af87;">"Filename (blank for default): "</span>):
+        <span style="color: #e68183;">return</span> <span style="color: #87af87;">"usa_graph_links.txt"</span>
+    <span style="color: #e68183;">if</span> (x == <span style="color: #87af87;">"Source state: "</span>):
+        <span style="color: #e68183;">return</span> <span style="color: #87af87;">"ID"</span>
+    <span style="color: #e68183;">if</span> (x == <span style="color: #87af87;">"Destination state: "</span>):
+        <span style="color: #e68183;">return</span> <span style="color: #87af87;">"IN"</span>
+    <span style="color: #e68183;">if</span> (x == <span style="color: #87af87;">"Length limit: "</span>):
+        <span style="color: #e68183;">return</span> <span style="color: #87af87;">"100"</span>
+
+<span style="color: #e68183;">def</span> <span style="color: #87c095;">read_graph_links</span>(filename):
+    <span style="color: #87c095; font-style: italic;">f</span> = <span style="color: #e39b7b;">open</span>(filename, <span style="color: #87af87;">'r'</span>)
+    <span style="color: #87c095; font-style: italic;">links</span> = []
+    <span style="color: #e68183;">for</span> line <span style="color: #e68183;">in</span> f:
+        links.append(<span style="color: #e39b7b;">tuple</span>(line.split()))
+    <span style="color: #e68183;">return</span> links
+
+<span style="color: #e68183;">def</span> <span style="color: #87c095;">create_graph</span>(links):
+    <span style="color: #87c095; font-style: italic;">neighbors</span> = defaultdict(<span style="color: #e39b7b;">list</span>)
+    <span style="color: #e68183;">for</span> node1, node2 <span style="color: #e68183;">in</span> links:
+      neighbors[node1].append(node2)
+      neighbors[node2].append(node1)
+    <span style="color: #e68183;">return</span> neighbors
+
+<span style="color: #e68183;">def</span> <span style="color: #87c095;">find_shortest_path</span>(graph, length_limit, start, end, path=<span style="color: #d3a0bc;">None</span>, shortest_path=<span style="color: #d3a0bc;">None</span>):
+    <span style="color: #e68183;">if</span> (<span style="color: #e68183;">not</span> path <span style="color: #e68183;">and</span> <span style="color: #e68183;">not</span> shortest_path):
+        <span style="color: #87c095; font-style: italic;">path</span> = <span style="color: #e39b7b;">list</span>()
+        <span style="color: #87c095; font-style: italic;">shortest_path</span> = <span style="color: #e39b7b;">list</span>()
+
+    <span style="color: #e68183;">if</span> (<span style="color: #e39b7b;">len</span>(path) &gt; length_limit <span style="color: #e68183;">or</span> \
+       (<span style="color: #e39b7b;">len</span>(shortest_path) &gt; <span style="color: #d3a0bc; font-weight: bold;">0</span> <span style="color: #e68183;">and</span> <span style="color: #e39b7b;">len</span>(shortest_path) &lt; <span style="color: #e39b7b;">len</span>(path))) <span style="color: #e68183;">and</span>\
+       <span style="color: #e39b7b;">len</span>(shortest_path) &lt;= length_limit:
+        <span style="color: #e68183;">return</span> shortest_path
+
+    <span style="color: #e68183;">if</span> end <span style="color: #e68183;">in</span> graph[start]:
+        path.append(start)
+        path.append(end)
+        <span style="color: #e68183;">if</span> <span style="color: #e39b7b;">len</span>(shortest_path) == <span style="color: #d3a0bc; font-weight: bold;">0</span> <span style="color: #e68183;">or</span> <span style="color: #e39b7b;">len</span>(path) &lt; <span style="color: #e39b7b;">len</span>(shortest_path):
+            <span style="color: #87c095; font-style: italic;">shortest_path</span> = path.copy()
+        <span style="color: #e68183;">return</span> shortest_path
+
+    path.append(start)
+    <span style="color: #87c095; font-style: italic;">nodes</span> = graph[start]
+
+    <span style="color: #87c095; font-style: italic;">count</span> = <span style="color: #d3a0bc; font-weight: bold;">0</span>
+    <span style="color: #e68183;">for</span> node <span style="color: #e68183;">in</span> nodes:
+        <span style="color: #87c095; font-style: italic;">count</span> += <span style="color: #d3a0bc; font-weight: bold;">1</span>
+        <span style="color: #e68183;">if</span> node <span style="color: #e68183;">not</span> <span style="color: #e68183;">in</span> path:
+            <span style="color: #87c095; font-style: italic;">new_path</span> = path.copy()
+            <span style="color: #87c095; font-style: italic;">shortest_path</span> = find_shortest_path(graph, length_limit,
+                                               node, end, new_path, shortest_path)
+
+    <span style="color: #e68183;">return</span> shortest_path
+
+<span style="color: #87c095; font-style: italic;">usa_graph</span> = create_graph(read_graph_links(<span style="color: #87af87;">"usa_graph_links.txt"</span>))
+
+<span style="color: #e68183;">class</span> <span style="color: #d9bb80;">UserInput</span>(<span style="color: #e39b7b;">object</span>):
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">__init__</span>(<span style="color: #e68183;">self</span>):
+    <span style="color: #e68183;">self</span>.filename = <span style="color: #e39b7b;">input</span>(<span style="color: #87af87;">"Filename (blank for default): "</span>)
+    <span style="color: #e68183;">self</span>.state1 = <span style="color: #e39b7b;">input</span>(<span style="color: #87af87;">"Source state: "</span>)
+    <span style="color: #e68183;">self</span>.state2 = <span style="color: #e39b7b;">input</span>(<span style="color: #87af87;">"Destination state: "</span>)
+    <span style="color: #e68183;">self</span>.length = <span style="color: #e39b7b;">int</span>(<span style="color: #e39b7b;">input</span>(<span style="color: #87af87;">"Length limit: "</span>))
+
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">verify</span>(<span style="color: #e68183;">self</span>):
+    <span style="color: #e68183;">if</span> (<span style="color: #e68183;">self</span>.filename):
+      <span style="color: #e68183;">try</span>:
+        <span style="color: #e68183;">self</span>.graph = create_graph(read_graph_links(<span style="color: #e68183;">self</span>.filename))
+      <span style="color: #e68183;">except</span>:
+        <span style="color: #e68183;">raise</span> <span style="color: #d9bb80;">ValueError</span>(<span style="color: #e68183;">self</span>.filename + <span style="color: #87af87;">" is not a valid file"</span>)
+    <span style="color: #e68183;">else</span>:
+      <span style="color: #e68183;">self</span>.graph = create_graph(read_graph_links(<span style="color: #87af87;">"usa_graph_links.txt"</span>))
+
+    <span style="color: #e68183;">if</span> <span style="color: #e68183;">self</span>.state1 <span style="color: #e68183;">not</span> <span style="color: #e68183;">in</span> usa_graph.keys():
+      <span style="color: #e68183;">raise</span> <span style="color: #d9bb80;">ValueError</span>(<span style="color: #e68183;">self</span>.state1 + <span style="color: #87af87;">" is not a valid state"</span>)
+    <span style="color: #e68183;">if</span> <span style="color: #e68183;">self</span>.state2 <span style="color: #e68183;">not</span> <span style="color: #e68183;">in</span> usa_graph.keys():
+      <span style="color: #e68183;">raise</span> <span style="color: #d9bb80;">ValueError</span>(<span style="color: #e68183;">self</span>.state2 + <span style="color: #87af87;">" is not a valid state"</span>)
+    <span style="color: #e68183;">if</span> (<span style="color: #e68183;">self</span>.length &lt; <span style="color: #d3a0bc; font-weight: bold;">1</span>):
+      <span style="color: #e68183;">raise</span> <span style="color: #d9bb80;">ValueError</span>(<span style="color: #87af87;">"You can't find a path that is less than length one!"</span>)
+
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">getArguments</span>(<span style="color: #e68183;">self</span>):
+    <span style="color: #e68183;">return</span> [<span style="color: #e68183;">self</span>.length, <span style="color: #e68183;">self</span>.state1, <span style="color: #e68183;">self</span>.state2]
+
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">findPath</span>(<span style="color: #e68183;">self</span>):
+    <span style="color: #e68183;">self</span>.verify()
+    <span style="color: #e68183;">return</span> find_shortest_path(<span style="color: #e68183;">self</span>.graph, *<span style="color: #e68183;">self</span>.getArguments())
+
+<span style="color: #87c095; font-style: italic;">a</span> = UserInput()
+<span style="color: #e68183;">print</span>(a.findPath())
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3616f2a" class="outline-2">
+<h2 id="org3616f2a"><span class="section-number-2">5</span> High Problem-Solving</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orga0710a0" class="outline-3">
+<h3 id="orga0710a0"><span class="section-number-3">5.1</span> Every Exercise Complete</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-org7f5c3e8" class="outline-4">
+<h4 id="org7f5c3e8"><span class="section-number-4">5.1.1</span> Chapter 9 Notebook</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<p>
+<a href="https://colab.research.google.com/drive/1NVyGjz4617ShbFP2FhW01-z2eEuvPOLg">https://colab.research.google.com/drive/1NVyGjz4617ShbFP2FhW01-z2eEuvPOLg</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org12d8408" class="outline-4">
+<h4 id="org12d8408"><span class="section-number-4">5.1.2</span> Chapter 8 Notebook</h4>
+<div class="outline-text-4" id="text-5-1-2">
+</div>
+<ol class="org-ol">
+<li><a id="orgc725a6a"></a>Part 1<br />
+<div class="outline-text-5" id="text-5-1-2-1">
+<p>
+<a href="https://colab.research.google.com/drive/1j1_T5thnsNzOiNUBcqlZtZHVYAB41wwL">https://colab.research.google.com/drive/1j1_T5thnsNzOiNUBcqlZtZHVYAB41wwL</a>
+</p>
+</div>
+</li>
+<li><a id="org0081f90"></a>Part 2<br />
+<div class="outline-text-5" id="text-5-1-2-2">
+<p>
+<a href="https://colab.research.google.com/drive/1pzRjFmWSTXbv1w9Tb1Aka4fKpYQ2HPHY">https://colab.research.google.com/drive/1pzRjFmWSTXbv1w9Tb1Aka4fKpYQ2HPHY</a>
+</p>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgda2ddc5" class="outline-4">
+<h4 id="orgda2ddc5"><span class="section-number-4">5.1.3</span> Chapter 7 Notebook</h4>
+<div class="outline-text-4" id="text-5-1-3">
+</div>
+<ol class="org-ol">
+<li><a id="org0edbb9e"></a>Part 1<br />
+<div class="outline-text-5" id="text-5-1-3-1">
+<p>
+<a href="https://colab.research.google.com/drive/1uV_h7zQM5035iILKaR_XnW6-Jn6D5RfO">https://colab.research.google.com/drive/1uV_h7zQM5035iILKaR_XnW6-Jn6D5RfO</a>
+</p>
+</div>
+</li>
+<li><a id="orga710f72"></a>Part 2<br />
+<div class="outline-text-5" id="text-5-1-3-2">
+<p>
+<a href="https://colab.research.google.com/drive/17oASsxihESvpLVku0l2NhKPWGVtlzKM2">https://colab.research.google.com/drive/17oASsxihESvpLVku0l2NhKPWGVtlzKM2</a>
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-org751da41" class="outline-3">
+<h3 id="org751da41"><span class="section-number-3">5.2</span> Going above and beyond</h3>
+<div class="outline-text-3" id="text-5-2">
+<p>
+Of course, completing every exercise means nothing if nothing was actually learned!
+I tried to show in each notebook how I was applying my knowledge of the material
+outside of common exercises.
+</p>
+</div>
+<div id="outline-container-orgb090d2d" class="outline-4">
+<h4 id="orgb090d2d"><span class="section-number-4">5.2.1</span> Chapter 7</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<p>
+This was my favorite chapter for exercise since we got to create our own! Below
+are some examples of my favorite exercises from this chapter:
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgbdb4e14"></a>A Library for Huffman Trees<br />
+<div class="outline-text-5" id="text-5-2-1-1">
+<p>
+The file <a href="helper.py">helper.py</a> contains all of my code that I wrote to help with operations
+on Huffman Trees for Chapter 7.
+</p>
+
+<p>
+One exercise where I used this code was building a web crawler to find what page on
+a website could benefit the most from a Huffman-Encoding.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #e68183;">import</span> random
+<span style="color: #e68183;">import</span> requests
+<span style="color: #e68183;">import</span> re
+<span style="color: #e68183;">import</span> time
+<span style="color: #e68183;">from</span> urllib.parse <span style="color: #e68183;">import</span> urlparse
+<span style="color: #e68183;">from</span> helper <span style="color: #e68183;">import</span> * <span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">My huffman tree helper code</span>
+<span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">I found a class for a web crawler here: https://dev.to/fprime/how-to-create-a-web-crawler-from-scratch-in-python-2p46</span>
+<span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">that I will modify</span>
+<span style="color: #e68183;">class</span> <span style="color: #d9bb80;">PyCrawler</span>(<span style="color: #e39b7b;">object</span>):
+    <span style="color: #e68183;">def</span> <span style="color: #87c095;">__init__</span>(<span style="color: #e68183;">self</span>, starting_url):
+        <span style="color: #e68183;">self</span>.starting_url = starting_url
+        <span style="color: #e68183;">self</span>.visited = <span style="color: #e39b7b;">set</span>()
+        <span style="color: #e68183;">self</span>.maxCR = <span style="color: #d3a0bc; font-weight: bold;">0</span>
+        <span style="color: #e68183;">self</span>.maxURL = <span style="color: #87af87;">""</span>
+
+    <span style="color: #e68183;">def</span> <span style="color: #87c095;">get_html</span>(<span style="color: #e68183;">self</span>, url):
+        <span style="color: #e68183;">try</span>:
+            <span style="color: #87c095; font-style: italic;">html</span> = requests.get(url)
+        <span style="color: #e68183;">except</span> <span style="color: #d9bb80;">Exception</span> <span style="color: #e68183;">as</span> e:
+            <span style="color: #e68183;">print</span>(e)
+            <span style="color: #e68183;">return</span> <span style="color: #87af87;">""</span>
+        <span style="color: #e68183;">return</span> html.content.decode(<span style="color: #87af87;">'latin-1'</span>)
+
+    <span style="color: #e68183;">def</span> <span style="color: #87c095;">get_links</span>(<span style="color: #e68183;">self</span>, url):
+        <span style="color: #87c095; font-style: italic;">html</span> = <span style="color: #e68183;">self</span>.get_html(url)
+        <span style="color: #87c095; font-style: italic;">parsed</span> = urlparse(url)
+        <span style="color: #87c095; font-style: italic;">base</span> = f<span style="color: #87af87;">"{parsed.scheme}://{parsed.netloc}"</span>
+        <span style="color: #87c095; font-style: italic;">links</span> = re.findall(<span style="color: #87af87;">'''&lt;a\s+(?:[^&gt;]*?\s+)?href="([^"]*)"'''</span>, html)
+        <span style="color: #e68183;">for</span> i, link <span style="color: #e68183;">in</span> <span style="color: #e39b7b;">enumerate</span>(links):
+            <span style="color: #e68183;">if</span> <span style="color: #e68183;">not</span> urlparse(link).netloc:
+                <span style="color: #87c095; font-style: italic;">link_with_base</span> = base + link
+                <span style="color: #87c095; font-style: italic;">links</span>[i] = link_with_base
+
+        <span style="color: #e68183;">return</span> <span style="color: #e39b7b;">set</span>(<span style="color: #e39b7b;">filter</span>(<span style="color: #e68183;">lambda</span> x: <span style="color: #87af87;">'mailto'</span> <span style="color: #e68183;">not</span> <span style="color: #e68183;">in</span> x, links))
+
+    <span style="color: #e68183;">def</span> <span style="color: #87c095;">extract_info</span>(<span style="color: #e68183;">self</span>, url):
+        <span style="color: #87c095; font-style: italic;">html</span> = <span style="color: #e68183;">self</span>.get_html(url)
+        <span style="color: #87c095; font-style: italic;">curr_cr</span> = calculateCompressionRatio(<span style="color: #e39b7b;">str</span>(html))
+        <span style="color: #e68183;">if</span> (curr_cr &gt; <span style="color: #e68183;">self</span>.maxCR):
+          <span style="color: #e68183;">self</span>.maxCR = curr_cr
+          <span style="color: #e68183;">self</span>.maxURL = <span style="color: #e39b7b;">str</span>(url)
+        <span style="color: #e68183;">return</span> <span style="color: #d3a0bc;">None</span>
+
+    <span style="color: #e68183;">def</span> <span style="color: #87c095;">crawl</span>(<span style="color: #e68183;">self</span>, url):
+        <span style="color: #e68183;">for</span> link <span style="color: #e68183;">in</span> <span style="color: #e68183;">self</span>.get_links(url):    
+            <span style="color: #e68183;">if</span> link <span style="color: #e68183;">in</span> <span style="color: #e68183;">self</span>.visited:        
+                <span style="color: #e68183;">continue</span>                    
+            <span style="color: #e68183;">print</span>(link)                 
+            <span style="color: #e68183;">self</span>.visited.add(link)
+            <span style="color: #87c095; font-style: italic;">info</span> = <span style="color: #e68183;">self</span>.extract_info(link)
+            <span style="color: #e68183;">self</span>.crawl(link)
+
+    <span style="color: #e68183;">def</span> <span style="color: #87c095;">start</span>(<span style="color: #e68183;">self</span>):
+        <span style="color: #e68183;">self</span>.crawl(<span style="color: #e68183;">self</span>.starting_url)
+
+<span style="color: #e68183;">if</span> <span style="color: #e39b7b;">__name__</span> == <span style="color: #87af87;">"__main__"</span>:
+    <span style="color: #87c095; font-style: italic;">crawler</span> = PyCrawler(<span style="color: #87af87;">"https://wiki.archlinux.org/index.php"</span>)
+    <span style="color: #e68183;">try</span>:
+        crawler.start()
+    <span style="color: #e68183;">except</span>:
+        <span style="color: #e68183;">print</span>(<span style="color: #87af87;">"Out of "</span> + <span style="color: #e39b7b;">str</span>(<span style="color: #e39b7b;">len</span>(crawler.visited)) + <span style="color: #87af87;">" links, the one with the biggest Compression Ratio was: "</span> + \
+            crawler.maxURL + <span style="color: #87af87;">" with a compression ratio of: "</span> + <span style="color: #e39b7b;">str</span>(crawler.maxCR))
+</pre>
+</div>
+
+<p>
+The largest compression ratio I have found was from the site <a href="https://www.archlinux32.org/packages/">https://www.archlinux32.org/packages/</a> which had a compression ratio of 51.55!
+</p>
+</div>
+</li>
+
+<li><a id="org22e5e86"></a>A class for permutation trees<br />
+<div class="outline-text-5" id="text-5-2-1-2">
+<p>
+One idea that I thought was cool in Chapter 7 was the idea of a permutation tree. This
+intrigued me because I liked the idea of a tree where each node has variable amount of
+children.
+</p>
+
+<p>
+This brought me to implement an Object-Oriented approach to the Permutation Tree.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #e68183;">class</span> <span style="color: #d9bb80;">TreeNode</span>(<span style="color: #e39b7b;">object</span>):
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">__init__</span>(<span style="color: #e68183;">self</span>, data=<span style="color: #d3a0bc;">None</span>):
+    <span style="color: #e68183;">self</span>.children = []
+    <span style="color: #e68183;">self</span>.data = data
+
+<span style="color: #e68183;">class</span> <span style="color: #d9bb80;">PermutationTree</span>(<span style="color: #e39b7b;">object</span>):
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">__init__</span>(<span style="color: #e68183;">self</span>, nums):
+    <span style="color: #e68183;">self</span>.nums = nums
+    <span style="color: #e68183;">self</span>.root = TreeNode()
+    <span style="color: #e68183;">self</span>.initializeTree()
+    <span style="color: #e68183;">self</span>.buildPermutationTree(<span style="color: #e68183;">self</span>.root, nums)
+
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">initializeTree</span>(<span style="color: #e68183;">self</span>):
+    <span style="color: #e68183;">for</span> i <span style="color: #e68183;">in</span> <span style="color: #e68183;">self</span>.nums:
+      <span style="color: #e68183;">self</span>.root.children.append(TreeNode(i))
+
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">buildPermutationTree</span>(<span style="color: #e68183;">self</span>, root, nums):
+    <span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">Recursively build a permutation tree</span>
+    <span style="color: #e68183;">for</span> child <span style="color: #e68183;">in</span> root.children:
+      <span style="color: #87c095; font-style: italic;">copy_nums</span> = nums.copy()
+      copy_nums.remove(child.data)
+      <span style="color: #e68183;">for</span> num <span style="color: #e68183;">in</span> copy_nums:
+        child.children.append(TreeNode(num))
+      <span style="color: #e68183;">self</span>.buildPermutationTree(child, copy_nums)
+
+  <span style="color: #e68183;">def</span> <span style="color: #87c095;">print_tree</span>(<span style="color: #e68183;">self</span>, root, visited=[], numSpaces=<span style="color: #d3a0bc; font-weight: bold;">0</span>):
+    <span style="color: #e68183;">if</span> <span style="color: #e39b7b;">id</span>(root) <span style="color: #e68183;">not</span> <span style="color: #e68183;">in</span> visited:
+      <span style="color: #e68183;">print</span>(<span style="color: #87af87;">"--"</span> * numSpaces + <span style="color: #e39b7b;">str</span>(root.data))
+      <span style="color: #87c095; font-style: italic;">numSpaces</span> += <span style="color: #d3a0bc; font-weight: bold;">1</span>
+      visited.append(<span style="color: #e39b7b;">id</span>(root))
+      <span style="color: #e68183;">for</span> child <span style="color: #e68183;">in</span> root.children:
+        <span style="color: #e68183;">self</span>.print_tree(child, visited, numSpaces)
+    <span style="color: #e68183;">else</span>:
+      <span style="color: #87c095; font-style: italic;">numSpaces</span> -= <span style="color: #d3a0bc; font-weight: bold;">1</span>
+
+<span style="color: #87c095; font-style: italic;">b</span> = PermutationTree([<span style="color: #87af87;">"A"</span>,<span style="color: #87af87;">"B"</span>,<span style="color: #87af87;">"D"</span>])
+b.print_tree(b.root)
+</pre>
+</div>
+</div>
+</li>
+
+<li><a id="org03b483c"></a>Exploring binarytree<br />
+<div class="outline-text-5" id="text-5-2-1-3">
+<p>
+I found a cool package on PyPi called &ldquo;binarytree&rdquo;. Installing is a simple
+&rsquo;pip install binarytree&rsquo; away.
+</p>
+
+<p>
+To explore this package, I created a function to create a random AVL-Balanced
+tree and print it.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #e68183;">from</span> binarytree <span style="color: #e68183;">import</span> Node
+<span style="color: #e68183;">from</span> math <span style="color: #e68183;">import</span> floor, log2
+<span style="color: #e68183;">import</span> random
+
+<span style="color: #e68183;">def</span> <span style="color: #87c095;">createAVLFromList</span>(arr, leftIndex, rightIndex):
+  <span style="color: #e68183;">if</span> leftIndex &gt; rightIndex:
+    <span style="color: #e68183;">return</span> <span style="color: #d3a0bc;">None</span>
+
+  <span style="color: #87c095; font-style: italic;">midIndex</span> = (leftIndex + rightIndex) // <span style="color: #d3a0bc; font-weight: bold;">2</span>
+  <span style="color: #87c095; font-style: italic;">root</span> = Node(arr[midIndex])
+  <span style="color: #87c095; font-style: italic;">root.right</span> = createAVLFromList(arr, midIndex + <span style="color: #d3a0bc; font-weight: bold;">1</span>, rightIndex)
+  <span style="color: #87c095; font-style: italic;">root.left</span>  = createAVLFromList(arr, leftIndex, midIndex - <span style="color: #d3a0bc; font-weight: bold;">1</span>)
+  <span style="color: #e68183;">return</span> root
+
+<span style="color: #e68183;">def</span> <span style="color: #87c095;">createRandomBalancedBinaryTree</span>():
+  <span style="color: #87c095; font-style: italic;">rand_nums</span> = [random.randrange(<span style="color: #d3a0bc; font-weight: bold;">1</span>, <span style="color: #d3a0bc; font-weight: bold;">100000</span>, <span style="color: #d3a0bc; font-weight: bold;">1</span>) <span style="color: #e68183;">for</span> i <span style="color: #e68183;">in</span> <span style="color: #e39b7b;">range</span>(random.randint(<span style="color: #d3a0bc; font-weight: bold;">5</span>, <span style="color: #d3a0bc; font-weight: bold;">50</span>))]
+  rand_nums.sort()
+  <span style="color: #e68183;">return</span> createAVLFromList(rand_nums, <span style="color: #d3a0bc; font-weight: bold;">0</span>, <span style="color: #e39b7b;">len</span>(rand_nums)-<span style="color: #d3a0bc; font-weight: bold;">1</span>)
+
+<span style="color: #e68183;">print</span>(createRandomBalancedBinaryTree())
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-orgce10420" class="outline-4">
+<h4 id="orgce10420"><span class="section-number-4">5.2.2</span> Chapter 8</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<p>
+Since we weren&rsquo;t informed to create our own exercises for Chapter 8, I just
+continued with the standard ones.
+I thought only one exercise from this notebook would suffice since the reader
+will no doubt already be familiar with the exercises from this chapter.
+</p>
+</div>
+<ol class="org-ol">
+<li><a id="orgce30577"></a>Calculating the probability of two randomly selected nodes being connected in a graph<br />
+<div class="outline-text-5" id="text-5-2-2-1">
+<p>
+The computer-science way:
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #e68183;">def</span> <span style="color: #87c095;">PtwoNodesConnected</span>(graph):
+  <span style="color: #87c095; font-style: italic;">pairsOfNodes</span> = <span style="color: #e39b7b;">set</span>()
+  <span style="color: #87c095; font-style: italic;">pairsOfNodesConnected</span> = <span style="color: #e39b7b;">set</span>()
+  <span style="color: #e68183;">for</span> i <span style="color: #e68183;">in</span> graph.keys():
+    <span style="color: #e68183;">for</span> j <span style="color: #e68183;">in</span> graph.keys():
+      <span style="color: #e68183;">if</span> ((i == j) <span style="color: #e68183;">or</span> ((i,j) <span style="color: #e68183;">in</span> pairsOfNodes <span style="color: #e68183;">or</span> (j,i) <span style="color: #e68183;">in</span> pairsOfNodes)):
+        <span style="color: #e68183;">continue</span>
+      <span style="color: #e68183;">else</span>:
+        pairsOfNodes.add((i,j))
+      <span style="color: #e68183;">if</span> ((j <span style="color: #e68183;">in</span> graph[i] <span style="color: #e68183;">or</span> i <span style="color: #e68183;">in</span> graph[j]) <span style="color: #e68183;">and</span> ((j,i) <span style="color: #e68183;">not</span> <span style="color: #e68183;">in</span> pairsOfNodesConnected <span style="color: #e68183;">and</span> (i,j) <span style="color: #e68183;">not</span> <span style="color: #e68183;">in</span> pairsOfNodesConnected)):
+        pairsOfNodesConnected.add((i,j))
+
+  <span style="color: #e68183;">return</span> <span style="color: #e39b7b;">len</span>(pairsOfNodesConnected) / <span style="color: #e39b7b;">len</span>(pairsOfNodes)
+
+<span style="color: #87c095; font-style: italic;">WordGraph</span> = {<span style="color: #d3a0bc; font-weight: bold;">1</span>:{<span style="color: #d3a0bc; font-weight: bold;">2</span>,<span style="color: #d3a0bc; font-weight: bold;">0</span>,<span style="color: #d3a0bc; font-weight: bold;">4</span>},<span style="color: #d3a0bc; font-weight: bold;">2</span>:{<span style="color: #d3a0bc; font-weight: bold;">0</span>},<span style="color: #d3a0bc; font-weight: bold;">0</span>:{<span style="color: #d3a0bc; font-weight: bold;">3</span>},<span style="color: #d3a0bc; font-weight: bold;">3</span>:{<span style="color: #d3a0bc; font-weight: bold;">4</span>,<span style="color: #d3a0bc; font-weight: bold;">5</span>},<span style="color: #d3a0bc; font-weight: bold;">4</span>:{<span style="color: #d3a0bc; font-weight: bold;">5</span>},<span style="color: #d3a0bc; font-weight: bold;">5</span>:{<span style="color: #d3a0bc; font-weight: bold;">7</span>,<span style="color: #d3a0bc; font-weight: bold;">6</span>},<span style="color: #d3a0bc; font-weight: bold;">6</span>:{<span style="color: #d3a0bc; font-weight: bold;">7</span>},<span style="color: #d3a0bc; font-weight: bold;">7</span>:{}}
+
+<span style="color: #e68183;">print</span>(PtwoNodesConnected(WordGraph))
+
+</pre>
+</div>
+
+<p>
+The mathematics way:
+Take the number of entries that are &ldquo;1&rdquo; in an adjacency matrix and divide by
+the total number of entries that are not the diagonal.
+</p>
+
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #5b5b5b;"># </span><span style="color: #5b5b5b;">An example from the Word Graph above</span>
+<span style="color: #e68183;">print</span>(<span style="color: #d3a0bc; font-weight: bold;">22</span> / (<span style="color: #d3a0bc; font-weight: bold;">64</span>-<span style="color: #d3a0bc; font-weight: bold;">8</span>))
+</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div id="outline-container-orgd061266" class="outline-4">
+<h4 id="orgd061266"><span class="section-number-4">5.2.3</span> Chapter 9</h4>
+<div class="outline-text-4" id="text-5-2-3">
+<p>
+There was not much in this notebook that struck out to me while I was writing
+this grade claim since the reader of this claim will also be familiar with the
+exercises from this chapter.
+</p>
+
+<p>
+However, I do think my solution for Exercise 374, which recognizes the grammar
+of propositional logic, is quite elegant and simple since it automatically
+balances parenthesis without the need for 5 more productions.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="org5fe11c5"></a>Producing First-Order Logic<br />
+<div class="outline-text-5" id="text-5-2-3-1">
+<p>
+C is a set of constant variables {p,q,r,s,t,&#x2026;}
+</p>
+
+<p>
+F &rarr; &not; F | (FOF) | (F)
+</p>
+
+<p>
+F &rarr; p, p &isin; C
+</p>
+
+<p>
+O &rarr; &or; | &and; | &otimes;
+</p>
+
+<p>
+As seen in my notebook, this language can verify:
+</p>
+
+<p>
+(¬p∨q) [This is exercise 42 in the book]
+</p>
+
+<p>
+(¬q∨((r∨s)∧s))
+</p>
+
+<p>
+¬(s∨¬(r⊕t))
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: Logan Hunt</p>
+<p class="date">Created: 2020-12-14 Mon 17:15</p>
+</div>
+</body>
+</html>
